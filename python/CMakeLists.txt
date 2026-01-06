@@ -1,5 +1,5 @@
 set(SONATA_PYTHON_BUILD ${CMAKE_CURRENT_BINARY_DIR}/libsonata)
-
+find_package(Python 3.11 COMPONENTS Development.Module)
 if (EXTLIB_FROM_SUBMODULES)
     add_subdirectory(pybind11 EXCLUDE_FROM_ALL)
 else()
